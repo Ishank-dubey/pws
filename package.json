@@ -1,0 +1,27 @@
+{
+  "name": "pws_home",
+  "version": "1.0.0",
+  "description": "Web Dev Studio",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"http-server ./pws"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ishank-dubey/pws.git"
+  },
+  "keywords": [
+    "Web",
+    "Studio"
+  ],
+  "author": "Ishank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ishank-dubey/pws/issues"
+  },
+  "homepage": "https://github.com/Ishank-dubey/pws#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
