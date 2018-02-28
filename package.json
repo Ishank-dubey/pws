@@ -5,8 +5,8 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"http-server ./pws",
-    "start_app":"node app"
+    "start": "http-server ./pws",
+    "start_app": "node app"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,8 @@
   "homepage": "https://github.com/Ishank-dubey/pws#readme",
   "devDependencies": {
     "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.202.0"
   }
 }

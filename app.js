@@ -1,8 +1,4 @@
 /**
- * http://usejsdoc.org/
- */
-console.log("test");
-/**
  * Simple S3 bucket operations
  */
 var AWS = require('aws-sdk');
@@ -11,7 +7,7 @@ var s3 = new AWS.S3();
 
 // Bucket names must be unique across all S3 users
 
-var myBucket = '';
+var myBucket = 'pritishwebsolutions.com';
 
 var params = {
 		  Bucket: myBucket /* required */
