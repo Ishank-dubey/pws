@@ -7,7 +7,7 @@ var s3 = new AWS.S3();
 
 // Bucket names must be unique across all S3 users
 
-var myBucket = 'pritishwebsolutions.com';
+var myBucket = '';
 
 var params = {
 		  Bucket: myBucket /* required */
