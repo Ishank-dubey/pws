@@ -6,20 +6,23 @@
 html,
 body {
     background-color: #fff;
-    color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    color: white;
 }
 
 .pwsnav{
 	text-align: center;
+	background-color: #333;
 }
 .pwsnavlist{
 	list-style: none;
-	margin: 0 auto;
+	margin: 0 auto 50px auto;
+	margin-bottom: 50px;
+	position:relative;
 }
 .pwsnavlist li{
    	display:inline-block;
@@ -27,14 +30,13 @@ body {
 }
 .btn:link,
 .btn:visited {
+	color:white;
     display: inline-block;
     text-decoration: none;
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
-    transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
 .btn:hover {
-	background-color: #cf6d17;
+	text-decoration: underline;
 }
 
 .verticalDivider:before{
@@ -43,9 +45,27 @@ body {
     color: #999
 }
 .pwsnav h1 {
-	margin:0 0 12px 0;
+	font-weight: 500;
+	margin:0 0 10px 0;
 	font-size: 80%;
+	color: white;
 }
+
+.pseudoBottomBorder:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 10%; /* Change this to whatever width you want. */
+    padding-top: 12px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid #ccc; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.pseudoContent:after {
+	content: '';
+	display: block; 
+	padding-top: 8px;
+}
+
 @media screen and (min-width: 461px) {
   .pwsnavlist li{
    	font-size: 100%;
