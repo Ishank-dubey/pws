@@ -23,4 +23,34 @@ body {
 }
 .pwsnavlist li{
    	display:inline-block;
+   	font-size: 80%;
+}
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn:hover {
+	background-color: #cf6d17;
+}
+
+.verticalDivider:before{
+	content: '|';
+    padding: 0 .3em 0 .1em;
+    color: #999
+}
+.pwsnav h1 {
+	margin:0 0 12px 0;
+	font-size: 80%;
+}
+@media screen and (min-width: 461px) {
+  .pwsnavlist li{
+   	font-size: 100%;
+   }
+   .pwsnav h1 {
+	font-size: 120%;
+}	
 }
