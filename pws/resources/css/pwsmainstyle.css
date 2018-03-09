@@ -16,12 +16,12 @@ body {
 
 .pwsnav{
 	text-align: center;
-	background-color: #333;
+	background-color: #fafafa;
+	border-bottom: 1px solid #e5e5e5;
+	padding-top: 5px;
 }
 .pwsnavlist{
 	list-style: none;
-	margin: 0 auto 50px auto;
-	margin-bottom: 50px;
 	position:relative;
 }
 .pwsnavlist li{
@@ -30,9 +30,10 @@ body {
 }
 .btn:link,
 .btn:visited {
-	color:white;
+	color:rgba(0,0,0,.85);
     display: inline-block;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .btn:hover {
@@ -42,13 +43,14 @@ body {
 .verticalDivider:before{
 	content: '|';
     padding: 0 .3em 0 .1em;
-    color: #999
+    color: #999;
+    font-weight: 500;
 }
 .pwsnav h1 {
 	font-weight: 500;
 	margin:0 0 10px 0;
 	font-size: 80%;
-	color: white;
+	color:rgba(0,0,0,.85);
 }
 
 .pseudoBottomBorder:after {
@@ -68,9 +70,9 @@ body {
 
 @media screen and (min-width: 461px) {
   .pwsnavlist li{
-   	font-size: 100%;
+   	font-size: 90%;
    }
    .pwsnav h1 {
-	font-size: 120%;
+	font-size: 110%;
 }	
 }
