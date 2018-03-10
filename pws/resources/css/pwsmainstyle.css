@@ -12,6 +12,7 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     color: white;
+    height:100%;
 }
 
 .pwsnav{
@@ -26,7 +27,6 @@ body {
 }
 .pwsnavlist li{
    	display:inline-block;
-   	font-size: 80%;
 }
 .btn:link,
 .btn:visited {
@@ -40,17 +40,60 @@ body {
 	text-decoration: underline;
 }
 
+nav > .btn:hover {
+	text-decoration: none;
+}
+
 .verticalDivider:before{
 	content: '|';
     padding: 0 .3em 0 .1em;
     color: #999;
     font-weight: 500;
 }
-.pwsnav h1 {
+.section-about-us{
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
+    background-size: cover;
+    color: #fff;
+    height:100vh;
+    background-attachment: fixed;
+}
+.container {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+    line-height: 150%;
+    }
+
+.aboutusSection {
+	padding-top: 5%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.pwsnav h1, h2 {
 	font-weight: 500;
 	margin:0 0 10px 0;
 	font-size: 80%;
 	color:rgba(0,0,0,.85);
+}
+
+h2 {
+	font-size: 120%;
+	width: 100%;
+    margin-top: 20px;
+}
+
+
+.container{
+	text-align: left;
+	padding-left: 5px;
 }
 
 .pseudoBottomBorder:after {
@@ -67,12 +110,18 @@ body {
 	display: block; 
 	padding-top: 8px;
 }
-
+.fontclass{
+	font-size: 80%;
+	text-align: center;
+	color:rgba(0,0,0,.85);
+	font-weight:500;
+}
 @media screen and (min-width: 461px) {
-  .pwsnavlist li{
-   	font-size: 90%;
-   }
+  
    .pwsnav h1 {
 	font-size: 110%;
+}  
+.fontclass{
+	font-size: 90%;
 }	
 }
