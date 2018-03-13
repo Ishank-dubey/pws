@@ -97,6 +97,7 @@ nav > .btn:hover {
 	font-weight: 500;
 	cursor: pointer;
 	color:#fff;
+	height:50%;
 }
 
 .flowchartline {
@@ -108,7 +109,7 @@ nav > .btn:hover {
 	cursor: pointer;
 	color:#fff;
 	width:2px;
-	height:20px;
+	height:50%;
 	margin:0 auto;
 }
 .sticky {
@@ -152,6 +153,29 @@ h2 {
     border-bottom: 1px solid #ccc; /* This creates the border. Replace black with whatever color you want. */
 }
 
+
+.projectroadmapSection .container {
+	top:0;
+	padding: 0 5px;
+	height:100%;
+}
+p a[href='#projectroadmapSection']:link, p a[href='#projectroadmapSection']:visited
+{
+	text-decoration: none;
+	color:rgb(73, 144, 226);
+	font-size: 120%;
+}
+p a[href='#projectroadmapSection']:link:hover, p a[href='#projectroadmapSection']:visited:hover
+{
+	text-decoration: underline;
+	color:#fff;
+	font-size: 120%;
+}
+
+.flowSection {
+	height:19%;
+	overflow:hidden;
+}
 .pseudoContent:after {
 	content: '';
 	display: block; 
