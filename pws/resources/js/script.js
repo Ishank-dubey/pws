@@ -1,8 +1,6 @@
 $(document).ready(function() {
-   /* $('.aboutusSection').outerHeight($(window).
-    		height()-$('header').outerHeight()+'px'); 
-    console.log($(window).height());*/
-	console.log($('body').outerHeight() - $('nav').outerHeight());
-	var height = $('body').outerHeight() - $('nav').outerHeight();
+    var heightBody = $('body').outerHeight(),
+	height = heightBody - $('nav').outerHeight();
 	$('.aboutusSection').outerHeight(height);
+	$('.projectroadmapSection').outerHeight(heightBody);
 });
