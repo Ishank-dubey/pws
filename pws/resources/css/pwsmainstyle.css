@@ -95,7 +95,6 @@ nav > .btn:hover {
 	border-radius: 5px;
 	text-align: center;
 	font-weight: 500;
-	cursor: pointer;
 	color:#fff;
 	height:50%;
 }
@@ -201,6 +200,6 @@ p a[href='#projectroadmapSection']:link:hover, p a[href='#projectroadmapSection'
 	font-size: 90%;
 }	
 .flowchartline {
-	height:60px;
+	height:50%;
 }
 }
