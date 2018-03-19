@@ -12,7 +12,6 @@ body {
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
     color: white;
-    height:100%;
 }
 
 .pwsnav{
@@ -59,20 +58,24 @@ nav > .btn:hover {
     line-height: 250%;
     }
 .container a.btn:link,.container a.btn:visited{
-	background-color: #3366FF;
 	color:#fff;
 	padding: 0 5px;
 	border-radius: 5px;
-	border: 2px solid #3300FF;
+	border: 2px solid #3366FF;
 }
-.aboutusSection {
+.makeBlock, .makeBlock:link,.makeBlock:visited {
+	display:block;
+	text-align: center;
+}
+
+.aboutusSection, .contactUsSection {
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
 }
-.projectroadmapSection{
+.projectroadmapSection, .container a.btn:link,.container a.btn:visited{
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4f85bb+0,4f85bb+100;Blue+3D+%239 */
 	background: #4f85bb; /* Old browsers */
 	background: -moz-linear-gradient(top, #4f85bb 0%, #4f85bb 100%); /* FF3.6-15 */
@@ -81,7 +84,7 @@ nav > .btn:hover {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f85bb', endColorstr='#4f85bb',GradientType=0 ); /* IE6-9 */
 }
 
-.projectroadmapSection >.container > p {
+.projectroadmapSection >.container > h2 {
 	color:#fff;
 }
 
@@ -128,7 +131,6 @@ nav > .btn:hover {
 h2 {
 	font-size: 120%;
 	width: 100%;
-    margin-top: 20px;
 }
 
 
@@ -158,18 +160,39 @@ h2 {
 	padding: 0 5px;
 	height:100%;
 }
-p a[href='#projectroadmapSection']:link, p a[href='#projectroadmapSection']:visited
+
+.contactUsSection .container {
+	top:0;
+	padding: 0 5px;
+	height:100%;
+}
+
+h2 a[href='#projectroadmapSection']:link, h2 a[href='#projectroadmapSection']:visited
 {
 	text-decoration: none;
 	color:rgb(73, 144, 226);
 	font-size: 120%;
 }
-p a[href='#projectroadmapSection']:link:hover, p a[href='#projectroadmapSection']:visited:hover
+h2 a[href='#projectroadmapSection']:link:hover, h2 a[href='#projectroadmapSection']:visited:hover
 {
 	text-decoration: underline;
 	color:#fff;
 	font-size: 120%;
 }
+
+h2 a[href='#contactUsSection']:link, h2 a[href='#contactUsSection']:visited{
+	text-decoration: none;
+	color:gray;
+	font-size: 120%;
+}
+
+h2 a[href='#contactUsSection']:link:hover, h2 a[href='#contactUsSection']:visited:hover
+{
+	text-decoration: underline;
+	color:#000;
+	font-size: 120%;
+}
+
 
 .flowSection {
 	height:19%;
@@ -191,9 +214,56 @@ p a[href='#projectroadmapSection']:link:hover, p a[href='#projectroadmapSection'
 	color:rgba(0,0,0,.85);
 	font-weight:500;
 }
+
+label{
+	display:block;
+	line-height:100%;
+	font-size:80%;
+	max-width:550px;
+}
+
+input[type='text']{
+	max-width:550px;
+	border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #999;
+    box-shadow: none;
+    color: #000;
+    display: block;
+    font-size: 100%;
+    margin: 5px 0 0 0;
+    padding: 5px 5px;
+    height: 40px;
+    width: 100%;
+}
+
+.line-h {
+	line-height: 150%;
+}
+
+#scroll-to-top {
+	font-size: 1rem;
+    color: #333;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    position: fixed;
+    bottom:5px;
+    right: 0;
+    min-width: 20px;
+    text-align: center;
+    padding: 0 5px 1px;
+    font-size:80%;
+    text-decoration:none;
+}
+
 @media screen and (min-width: 461px) {
   
-   .pwsnav h1 {
+ .pwsnav h1 {
 	font-size: 110%;
 }  
 .fontclass{
@@ -201,5 +271,12 @@ p a[href='#projectroadmapSection']:link:hover, p a[href='#projectroadmapSection'
 }	
 .flowchartline {
 	height:50%;
+}
+.makeBlock, .makeBlock:link, .makeBlock:visited {
+	display: inline-block;
+	text-align:left;
+}
+.line-h {
+	line-height: 350%;
 }
 }
