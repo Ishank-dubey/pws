@@ -260,7 +260,13 @@ input[type='text']{
     font-size:80%;
     text-decoration:none;
 }
+.contact-form {
+	height:100%;
+}
 
+fieldset {
+	border-width:0px;
+}
 @media screen and (min-width: 461px) {
   
  .pwsnav h1 {

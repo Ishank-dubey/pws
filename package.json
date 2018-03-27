@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "http-server ./pws",
-    "start_app": "node app"
+    "start_app": "node app",
+    "lint":"jslint pws/resources/js/script.js"
   },
   "repository": {
     "type": "git",
