@@ -222,7 +222,8 @@ label{
 	max-width:550px;
 }
 
-input[type='text']{
+input[type='text'], textarea{
+	font-family: 'Lato', 'Arial', sans-serif;
 	max-width:550px;
 	border-radius: 0;
     -webkit-appearance: none;
@@ -266,6 +267,7 @@ input[type='text']{
 
 fieldset {
 	border-width:0px;
+	margin-bottom:20px;
 }
 @media screen and (min-width: 461px) {
   
