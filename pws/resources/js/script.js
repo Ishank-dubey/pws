@@ -1,5 +1,6 @@
 (function ($, document, window) {
 	$(document).ready(function() {
+		$('#contact-form').on('submit', formsubmission);
 		changeHeightOfSections(true);
 		scrollFunction(window.location.hash);
 		var timerId;
@@ -45,6 +46,14 @@
 			        });   
 			};
 		}
+		
+		function formsubmission(event){
+			event.preventDefault();
+			console.log(this.contactUsMessage.value);
+			$('.postMessegeStatus').text('Thank you! We will be in touch with you shortly');
+		}
+		
+		
 		$("a").on('click', function (event){
 			event.preventDefault();
 			scrollFunction(this.hash);  
