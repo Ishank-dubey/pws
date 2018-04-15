@@ -1,110 +1,178 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-html,
-body {
-    background-color: #fff;
-    font-family: 'Lato', 'Arial', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    text-rendering: optimizeLegibility;
-    overflow-x: hidden;
-    color: white;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.pwsnav{
+html, body {
+	background-color: #fff;
+	font-family: 'Lato', 'Arial', sans-serif;
+	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
+}
+
+.b-b {border-bottom: 1px solid #e5e5e5;}
+.b-c {background-color: #fafafa;}
+
+.pwsnav {
 	text-align: center;
-	background-color: #fafafa;
-	border-bottom: 1px solid #e5e5e5;
 	padding-top: 5px;
+	border-top: 1px solid #3e72cf;
 }
-.pwsnavlist{
+
+.pwsnav h1, h2 {
+	margin: 0 0 10px 0;
+	font-weight: 500;
+}
+
+h2 {
+	font-size: 20px;
+	width: 100%;
+}
+
+.container p {
+	font-size: 16px;
+	width: 100%;
+	letter-spacing: .5px;
+	line-height: 152%;
+	margin-bottom: 20px;
+}
+
+.pwsnavlist {
 	list-style: none;
-	position:relative;
+	position: relative;
 }
-.pwsnavlist li{
-   	display:inline-block;
+
+.pwsnavlist li {
+	display: inline-block;
 }
-.btn:link,
-.btn:visited {
-	color:rgba(0,0,0,.85);
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 500;
+
+.btn:link, .btn:visited {
+	color: rgba(0, 0, 0, .85);
+	text-decoration: none;
+	font-weight: 500;
 }
 
 .btn:hover {
 	text-decoration: underline;
 }
 
-nav > .btn:hover {
+nav>.btn:hover {
 	text-decoration: none;
 }
 
-.verticalDivider:before{
+.verticalDivider:before {
 	content: '|';
-    padding: 0 .3em 0 .1em;
-    color: #999;
-    font-weight: 500;
+	padding: 0 .3em 0 .1em;
+	color: #999;
+	font-weight: 500;
 }
 
 section {
-	min-height:484px;
+	min-height: 484px;
 }
 
 .container {
-    width: 100%;
-    max-width: 980px;
-    margin: 0 auto;
-    overflow: hidden;
-    line-height: 250%;
-    }
-.container a.btn:link,.container a.btn:visited, input[type='submit']{
-	color:#fff;
-	padding: 0 5px;
-	border-radius: 5px;
-	border: 2px solid #3366FF;
-}
-.makeBlock, .makeBlock:link,.makeBlock:visited {
-	display:block;
-	text-align: center;
+	width: 100%;
+	max-width: 980px;
+	margin: 0 auto;
+	overflow: hidden;
+	line-height: 250%;
 }
 
+.container a.btn:link, .container a.btn:visited, .container a.btn:active, input[type='submit'] {
+	color: #fff;
+	padding: 0 5px;
+	white-space: nowrap;
+	height: 40px;
+	-webkit-box-shadow:  0px 1px 4px rgba(00, 0, 0, 1);
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
+	line-height: 40px;
+	padding: 0 14px;
+	border-radius: 4px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: .025em;
+	text-decoration: none;
+	-webkit-transition: all .15s ease;
+	transition: all .15s ease;
+}
+
+.container a.btn:hover  {
+	-webkit-transform: translateY(-1px);
+	transform: translateY(-1px);
+	-webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, 1);
+	box-shadow: 0 7px 14px rgba(50, 50, 93, 1);
+}
+
+.makeBlock{
+	display: block;
+	text-align: center;
+	margin-right: 5px;
+}
+
+
 input[type='submit'] {
-	width:100px;
-	height:40px;
-	font-family:'Lato', 'Arial', sans-serif;
-	font-size: 90%;	
+	width: 100px;
+	height: 40px;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-size: 90%;
 }
 
 .postMessegeStatus {
 	display: block;
 }
 
-.aboutusSection, .contactUsSection {
+.aboutusSection {
+	background: #fff;
+	color: #000;
+}
+
+.contactUsSection {
 	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
-}
-.projectroadmapSection, .container a.btn:link,.container a.btn:visited, input[type='submit']{
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4f85bb+0,4f85bb+100;Blue+3D+%239 */
-	background: #4f85bb; /* Old browsers */
-	background: -moz-linear-gradient(top, #4f85bb 0%, #4f85bb 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #4f85bb 0%,#4f85bb 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #4f85bb 0%,#4f85bb 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4f85bb', endColorstr='#4f85bb',GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
+		endColorstr='#e5e5e5', GradientType=0); /* IE6-9 */
 }
 
-.projectroadmapSection >.container > h2 {
-	color:#fff;
+.container a[href='#projectroadmapSection'],
+	input[type='submit'] {
+	background: #3e72cf;
 }
 
-.projectroadmapSection >.container {
-	padding:2% 0;
+.container a[href='#contactUsSection']{
+	background: #000;
+}
+
+.pwsFooter {
+	background: #45484d; /* Old browsers */
+	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d',
+		endColorstr='#000000', GradientType=0); /* IE6-9 */
+}
+
+.footer-sec {
+	display: inline-block;
+	min-height: 20px;
+	color: #fff;
+}
+
+.projectroadmapSection>.container>h2 {
+	color: #fff;
+}
+
+.projectroadmapSection>.container {
+	padding: 2% 0;
 }
 
 .flowchartbox {
@@ -113,8 +181,8 @@ input[type='submit'] {
 	border-radius: 5px;
 	text-align: center;
 	font-weight: 500;
-	color:#fff;
-	height:50%;
+	color: #fff;
+	height: 50%;
 }
 
 .flowchartline {
@@ -124,137 +192,124 @@ input[type='submit'] {
 	text-align: center;
 	font-weight: 0;
 	cursor: pointer;
-	color:#fff;
-	width:2px;
-	height:50%;
-	margin:0 auto;
+	color: #fff;
+	width: 2px;
+	height: 50%;
+	margin: 0 auto;
 }
+
 .sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-}
-.pwsnav h1, h2 {
-	font-weight: 500;
-	margin:0 0 10px 0;
-	font-size: 80%;
-	color:rgba(0,0,0,.85);
-}
-
-h2 {
-	font-size: 120%;
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
+	z-index: 9999;
 }
 
-
-.container{
+.container {
 	text-align: left;
 	padding-left: 5px;
-	position:relative;
-	top:30%;
+	position: relative;
+	top: 30%;
 }
 
-.container > a:FIRST-CHILD{
+.container>a:FIRST-CHILD {
 	margin-bottom: 12px;
 }
 
 .pseudoBottomBorder:after {
-    content: ""; /* This is necessary for the pseudo element to work. */ 
-    display: block; /* This will put the pseudo element on its own line. */
-    margin: 0 auto; /* This will center the border. */
-    width: 10%; /* Change this to whatever width you want. */
-    padding-top: 12px; /* This creates some space between the element and the border. */
-    border-bottom: 1px solid #ccc; /* This creates the border. Replace black with whatever color you want. */
+	content: ""; /* This is necessary for the pseudo element to work. */
+	display: block; /* This will put the pseudo element on its own line. */
+	margin: 0 auto; /* This will center the border. */
+	width: 10%; /* Change this to whatever width you want. */
+	padding-top: 12px;
+	/* This creates some space between the element and the border. */
+	border-bottom: 1px solid #ccc;
+	/* This creates the border. Replace black with whatever color you want. */
 }
 
-
 .projectroadmapSection .container {
-	top:0;
+	top: 0;
 	padding: 0 5px;
-	height:100%;
+	height: 100%;
 }
 
 .contactUsSection .container {
-	top:0;
+	top: 0;
 	padding: 0 5px;
-	height:100%;
+	height: 100%;
 }
 
 h2 a[href='#projectroadmapSection']:link, h2 a[href='#projectroadmapSection']:visited
-{
+	{
 	text-decoration: none;
-	color:rgb(73, 144, 226);
-	font-size: 120%;
-}
-h2 a[href='#projectroadmapSection']:link:hover, h2 a[href='#projectroadmapSection']:visited:hover
-{
-	text-decoration: underline;
-	color:#fff;
+	color: rgb(73, 144, 226);
 	font-size: 120%;
 }
 
-h2 a[href='#contactUsSection']:link, h2 a[href='#contactUsSection']:visited{
+h2 a[href='#projectroadmapSection']:link:hover, h2 a[href='#projectroadmapSection']:visited:hover
+	{
+	text-decoration: underline;
+	color: #fff;
+	font-size: 120%;
+}
+
+h2 a[href='#contactUsSection']:link, h2 a[href='#contactUsSection']:visited
+	{
 	text-decoration: none;
-	color:gray;
+	color: gray;
 	font-size: 120%;
 }
 
 h2 a[href='#contactUsSection']:link:hover, h2 a[href='#contactUsSection']:visited:hover
-{
+	{
 	text-decoration: underline;
-	color:#000;
+	color: #000;
 	font-size: 120%;
 }
 
-
 .flowSection {
-	height:19%;
-	overflow:hidden;
+	height: 19%;
+	overflow: hidden;
 }
+
 .pseudoContent:after {
 	content: '';
-	display: block; 
+	display: block;
 	padding-top: 8px;
 }
 
-
-.container p{
-	font-size: 120%;
-}
 .fontclass {
 	font-size: 80%;
 	text-align: center;
-	color:rgba(0,0,0,.85);
-	font-weight:500;
+	font-weight: 500;
 }
 
-label{
-	display:block;
-	line-height:100%;
-	font-size:80%;
-	max-width:550px;
+label {
+	display: block;
+	line-height: 100%;
+	font-size: 80%;
+	max-width: 550px;
 }
 
-input[type='text'], textarea{
+input[type='text'], textarea {
 	font-family: 'Lato', 'Arial', sans-serif;
-	max-width:550px;
+	max-width: 550px;
 	border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    background-color: #fff;
-    border: 1px solid #999;
-    box-shadow: none;
-    color: #000;
-    display: block;
-    font-size: 100%;
-    margin: 5px 0 0 0;
-    padding: 5px 5px;
-    height: 40px;
-    width: 100%;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	background-color: #fff;
+	border: 1px solid #999;
+	box-shadow: none;
+	color: #000;
+	display: block;
+	font-size: 100%;
+	margin: 5px 0 0 0;
+	padding: 5px 5px;
+	height: 40px;
+	width: 100%;
 }
 
 .line-h {
@@ -263,43 +318,51 @@ input[type='text'], textarea{
 
 #scroll-to-top {
 	font-size: 1rem;
-    color: #333;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    position: fixed;
-    bottom:5px;
-    right: 0;
-    min-width: 20px;
-    text-align: center;
-    padding: 0 5px 1px;
-    font-size:80%;
-    text-decoration:none;
+	color: #333;
+	background-color: #f0f0f0;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	position: fixed;
+	bottom: 5px;
+	right: 0;
+	min-width: 20px;
+	text-align: center;
+	padding: 0 5px 1px;
+	font-size: 80%;
+	text-decoration: none;
 }
+
 .contact-form {
-	height:100%;
+	height: 100%;
 }
 
 fieldset {
-	border-width:0px;
-	margin-bottom:20px;
+	border-width: 0px;
+	margin-bottom: 20px;
 }
+
 @media screen and (min-width: 461px) {
-  
- .pwsnav h1 {
-	font-size: 110%;
-}  
-.fontclass{
-	font-size: 90%;
-}	
-.flowchartline {
-	height:50%;
-}
-.makeBlock, .makeBlock:link, .makeBlock:visited {
-	display: inline-block;
-	text-align:left;
-}
-.line-h {
-	line-height: 350%;
-}
+	.pwsnav {
+		font-size: 30px;
+	}
+	.pwsnav h1 {
+		font-size: 25px;
+	}
+	.container p {
+		font-size: 17px;
+		width: 476px;
+	}
+	h2 {
+		font-size: 25px;
+	}
+	.flowchartline {
+		height: 50%;
+	}
+	.makeBlock {
+		display: inline-block;
+		text-align: left;
+	}
+	.line-h {
+		line-height: 350%;
+	}
 }

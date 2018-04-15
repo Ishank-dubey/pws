@@ -8,9 +8,8 @@
 
 <link rel="stylesheet" type="text/css"
 	href="resources/css/pwsmainstyle.css">
-<link
-	href='https://fonts.googleapis.com/css?family=Lato:100,300,400,300italic'
-	rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Lato"
+	rel="stylesheet">
 <title>Pritish Web Studio</title>
 
 <link rel="apple-touch-icon" sizes="57x57"
@@ -58,22 +57,17 @@
 </head>
 <body>
 	<header id='pwsHeader'>
-		<nav class='pwsnav'>
+		<nav class='pwsnav b-c b-b'>
 			<a href='#' class='btn'>
 				<h1>Pritish Web Studio</h1>
 			</a>
-			<ul class='pwsnavlist pseudoContent'>
-				<li class='fontclass'><a class='btn'
-					href='#projectroadmapSection'>Project Implementation Road Map</a></li>
-				<li class='fontclass verticalDivider'><a class='btn'
-					href='#contactUsSection'>Contact us</a></li>
-			</ul>
 		</nav>
 	</header>
-	<section class="fontclass aboutusSection">
+	<section class="aboutusSection b-b">
 		<article class='container'>
 			<h2>Looking for a Web Application Vendor?</h2>
-
+			<p>Our clients rely on us to achieve quick time development and deployment of
+				highly available, secure and high performance Web Apps and APIs</p>
 			<a class='btn makeBlock' href='#projectroadmapSection'>Project
 				Implementation Road Map</a> <span class='makeBlock'>&nbsp;&nbsp;
 				Or &nbsp;&nbsp;</span> <a class='makeBlock btn' href='#contactUsSection'>Contact
@@ -82,7 +76,7 @@
 		</article>
 	</section>
 
-	<section class="fontclass projectroadmapSection"
+	<section class="projectroadmapSection b-c"
 		id='projectroadmapSection'>
 
 		<div class='container'>
@@ -124,45 +118,47 @@
 					Contact Us <a href="#contactUsSection">#</a>
 				</h2>
 				<fieldset>
-					<label for="contactUsFirstname">First name</label>
-					<input class="ca-form-input valid" type="text"
-						name="contactUsFirstname" id="contactUsFirstname"
-						title="First name">
+					<label for="contactUsFirstname">First name</label> <input
+						class="ca-form-input valid" type="text" name="contactUsFirstname"
+						id="contactUsFirstname" title="First name">
 				</fieldset>
 				<fieldset>
-					<label for="contactUsLastname">Last name</label>
-					<input class="ca-form-input valid" type="text"
-						name="contactUsLastname" id="contactUsLastname"
-						title="Last name">
+					<label for="contactUsLastname">Last name</label> <input
+						class="ca-form-input valid" type="text" name="contactUsLastname"
+						id="contactUsLastname" title="Last name">
 				</fieldset>
 				<fieldset>
-					<label for="contactUsContactNumber">Best Contact Number</label>
-					<input class="ca-form-input valid" type="text"
+					<label for="contactUsContactNumber">Best Contact Number</label> <input
+						class="ca-form-input valid" type="text"
 						name="contactUsContactNumber" id="contactUsContactNumber"
 						title="Contact Number">
 				</fieldset>
-				
+
 				<fieldset>
-					<label for="contactUsEmail">Email Id</label>
-					<input class="ca-form-input valid" type="text"
-						name="contactUsEmail" id="contactUsEmail"
-						title="Email Id">
+					<label for="contactUsEmail">Email Id</label> <input
+						class="ca-form-input valid" type="text" name="contactUsEmail"
+						id="contactUsEmail" title="Email Id">
 				</fieldset>
-				
+
 				<fieldset>
 					<label for="contactUsMessage">Drop us a line</label>
-					<textarea id="contactUsMessage" name="contactUsMessage" placeholder="Your message" title="Message"></textarea>
+					<textarea id="contactUsMessage" name="contactUsMessage"
+						placeholder="Your message" title="Message"></textarea>
 				</fieldset>
 				<fieldset>
 					<input type="submit" value="Send it!">
 				</fieldset>
 			</form>
-		<span class='postMessegeStatus'></span>	
+			<span class='postMessegeStatus'></span>
 		</div>
 	</section>
 	<a href="#pwsHeader" id="scroll-to-top">↑ <span>Scroll to
 			top</span></a>
-	<footer> </footer>
+	<footer class='pwsFooter fontclass'>
+		<section class='footer-sec'>About Us</section>
+		<section class='footer-sec'>Tech Blog</section>
+		<section class='footer-sec'></section>
+	</footer>
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
