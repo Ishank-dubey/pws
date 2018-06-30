@@ -9,36 +9,31 @@
 <feMergeNode in="SourceGraphic"/>
 </feMerge>
 </filter>
-<filter id="glow">
-<feColorMatrix type="matrix"
-values=
-"0 0 0 1 0
-0 0 0 1 0
-0 0 0 1 0
-0 0 0 1 0"/>
-<feGaussianBlur stdDeviation="5"
-result="coloredBlur"/>
-<feMerge>
-<feMergeNode in="coloredBlur"/>
-<feMergeNode in="SourceGraphic"/>
-</feMerge>
-</filter>
 </defs>
-<path style="filter:url(#drop-shadow);stroke: #4169E1;stroke-width:5;fill:transparent"
-d='M25 200
-L325 200
-A110 50 0 0 0 330 140
-A110 50 0 0 0 305 90
-A110 50 0 0 0 45 90
-A110 50 0 0 0 25 140
-A110 50 0 0 0 25.7 200.7'/>
+<path class="main-path"style="filter:url(#drop-shadow);stroke: #4169E1;fill:transparent"
+d='M25 200L325 200A110 50 0 0 0 330 140A110 50 0 0 0 305 90A110 50 0 0 0 45 90A110 50 0 0 0 25 140A110 50 0 0 0 25.7 200.7'>
+</path>
 <text x="65" y="150"
 style="fill: #4169E1; font-size:30;font-family:calibri;">
 Pritish Web Studio 
 </text>
 </svg>
+<style>
+.main-path {
+  stroke-dasharray: 1000;
+  stroke-width:2;
+  animation: logo 2s linear;
+}
 
-
-
-
-
+@keyframes logo {
+  from {
+    stroke-width:1;
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-width:3;
+    stroke-dashoffset: 0;
+  }
+  
+}
+</style>
