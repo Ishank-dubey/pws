@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" style='background-color: transparent;' width="400px"
+			height="250px" viewBox="0 0 400 250" id='pws-logo'>
+			 <style>
+    /* <![CDATA[ */
+    .main-path {
+  stroke-dasharray: 1000;
+  stroke-width:3;
+  animation: logo 2s linear;
+}
+
+@keyframes logo {
+  from {
+    stroke-width:1;
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-width:3;
+    stroke-dashoffset: 0;
+  }
+  
+}
+    /* ]]> */
+  </style>
+<!--svg style='background-color:transparent;' width="160px" height="90px" viewBox="0 0 300 250" id='pws-logo'>-->
+<defs>
+<filter id="drop-shadow">
+<feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+<feOffset dx="2" dy="2" result="offsetBlur" />
+<feMerge>
+<feMergeNode in="offsetBlur" />
+<feMergeNode in="SourceGraphic" />
+</feMerge>
+</filter>
+</defs>
+<path class="main-path"
+				style="filter:url(#drop-shadow);stroke: #4169E1;fill:transparent"
+				d='M25 200L325 200A110 50 0 0 0 330 140A110 50 0 0 0 305 90A110 50 0 0 0 45 90A110 50 0 0 0 25 140A110 50 0 0 0 25.7 200.7'>
+</path>
+<text x="65" y="150"
+				style="fill: #4169E1; font-size:30px;font-family:calibri, sans-serif;">
+Pritish Web Studio 
+</text>
+</svg>

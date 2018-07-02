@@ -13,11 +13,20 @@ html, body {
 
 .b-b {border-bottom: 1px solid #e5e5e5;}
 .b-c {background-color: #fafafa;}
-
+#project-outline-svg {
+	width:100%;
+	height:100%;
+	text-align:center;
+	line-height:100%;
+}
 .pwsnav {
 	text-align: center;
 	padding-top: 5px;
 	border-top: 1px solid #3e72cf;
+}
+
+svg text{
+	font-family: 'Lato', 'Arial', sans-serif;
 }
 
 .pwsnav h1, h2 {
@@ -28,6 +37,7 @@ html, body {
 h2 {
 	font-size: 20px;
 	width: 100%;
+	line-height:110%;
 }
 
 .container p {
@@ -36,15 +46,6 @@ h2 {
 	letter-spacing: .5px;
 	line-height: 152%;
 	margin-bottom: 20px;
-}
-
-.pwsnavlist {
-	list-style: none;
-	position: relative;
-}
-
-.pwsnavlist li {
-	display: inline-block;
 }
 
 .btn:link, .btn:visited {
@@ -61,13 +62,6 @@ nav>.btn:hover {
 	text-decoration: none;
 }
 
-.verticalDivider:before {
-	content: '|';
-	padding: 0 .3em 0 .1em;
-	color: #999;
-	font-weight: 500;
-}
-
 section {
 	min-height: 484px;
 }
@@ -81,7 +75,6 @@ section {
 }
 
 .container a.btn:link, .container a.btn:visited, .container a.btn:active, input[type='submit'] {
-	color: #fff;
 	padding: 0 5px;
 	white-space: nowrap;
 	height: 40px;
@@ -96,6 +89,17 @@ section {
 	text-decoration: none;
 	-webkit-transition: all .15s ease;
 	transition: all .15s ease;
+}
+.container a[href='#projectroadmapSection'],
+	input[type='submit'] {
+	color: #fff;
+	background: #3e72cf;
+}
+
+.container a[href='#contactUsSection']{
+	background: transparent;
+	color:#000;
+	border: 1px #000 solid;
 }
 
 .container a.btn:hover  {
@@ -124,41 +128,16 @@ input[type='submit'] {
 }
 
 .aboutusSection {
-	background: #fff;
+	background-color: #fff;
 	color: #000;
 }
 
 .contactUsSection {
-	background: #ffffff; /* Old browsers */
-	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #ffffff 0%, #e5e5e5 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff',
-		endColorstr='#e5e5e5', GradientType=0); /* IE6-9 */
-}
-
-.container a[href='#projectroadmapSection'],
-	input[type='submit'] {
-	background: #3e72cf;
-}
-
-.container a[href='#contactUsSection']{
-	background: #000;
+	background: #fff; /* Old browsers */
 }
 
 .pwsFooter {
 	background: #45484d; /* Old browsers */
-	background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
-	/* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
-	/* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
-	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d',
-		endColorstr='#000000', GradientType=0); /* IE6-9 */
 }
 
 .footer-sec {
@@ -168,7 +147,7 @@ input[type='submit'] {
 }
 
 .projectroadmapSection>.container>h2 {
-	color: #fff;
+	color: #000;
 }
 
 .projectroadmapSection>.container {
@@ -185,47 +164,15 @@ input[type='submit'] {
 	height: 50%;
 }
 
-.flowchartline {
-	line-height: 350%;
-	border: 1px solid #fff;
-	border-radius: 5px;
-	text-align: center;
-	font-weight: 0;
-	cursor: pointer;
-	color: #fff;
-	width: 2px;
-	height: 50%;
-	margin: 0 auto;
-}
-
-.sticky {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 9999;
-}
 
 .container {
 	text-align: left;
 	padding-left: 5px;
 	position: relative;
-	top: 30%;
 }
 
 .container>a:FIRST-CHILD {
 	margin-bottom: 12px;
-}
-
-.pseudoBottomBorder:after {
-	content: ""; /* This is necessary for the pseudo element to work. */
-	display: block; /* This will put the pseudo element on its own line. */
-	margin: 0 auto; /* This will center the border. */
-	width: 10%; /* Change this to whatever width you want. */
-	padding-top: 12px;
-	/* This creates some space between the element and the border. */
-	border-bottom: 1px solid #ccc;
-	/* This creates the border. Replace black with whatever color you want. */
 }
 
 .projectroadmapSection .container {
@@ -243,14 +190,14 @@ input[type='submit'] {
 h2 a[href='#projectroadmapSection']:link, h2 a[href='#projectroadmapSection']:visited
 	{
 	text-decoration: none;
-	color: rgb(73, 144, 226);
+	color: rgba(0,0,0,.5);
 	font-size: 120%;
+	background-color: transparent;
 }
 
 h2 a[href='#projectroadmapSection']:link:hover, h2 a[href='#projectroadmapSection']:visited:hover
 	{
-	text-decoration: underline;
-	color: #fff;
+	color: #000;
 	font-size: 120%;
 }
 
@@ -341,7 +288,7 @@ fieldset {
 	margin-bottom: 20px;
 }
 
-@media screen and (min-width: 461px) {
+@media screen and (min-width: 561px) {
 	.pwsnav {
 		font-size: 30px;
 	}
@@ -365,4 +312,21 @@ fieldset {
 	.line-h {
 		line-height: 350%;
 	}
+}
+.main-path {
+	stroke-dasharray: 1000;
+	stroke-width: 3;
+	animation: logo 2s linear;
+}
+
+@keyframes logo {
+	from { 
+	stroke-width:1;
+	stroke-dashoffset: 1000;
+}
+
+to {
+	stroke-width: 3;
+	stroke-dashoffset: 0;
+}
 }
