@@ -4,42 +4,28 @@
 	box-sizing: border-box;
 }
 
-html, body {
+html, body, select  {
 	background-color: #fff;
 	font-family: 'Lato', 'Arial', sans-serif;
 	text-rendering: optimizeLegibility;
 	overflow-x: hidden;
+	font-size:20px;
 }
 
 .b-b {border-bottom: 1px solid #e5e5e5;}
 .b-c {background-color: #fafafa;}
-#project-outline-svg {
-	width:100%;
-	height:100%;
-	text-align:center;
-	line-height:100%;
-}
-.pwsnav {
-	text-align: center;
-	padding-top: 5px;
-	border-top: 1px solid #3e72cf;
-}
-
 svg text{
 	font-family: 'Lato', 'Arial', sans-serif;
 }
-
 .pwsnav h1, h2 {
 	margin: 0 0 10px 0;
 	font-weight: 500;
 }
-
 h2 {
 	font-size: 20px;
 	width: 100%;
 	line-height:110%;
 }
-
 .container p {
 	font-size: 16px;
 	width: 100%;
@@ -47,37 +33,30 @@ h2 {
 	line-height: 152%;
 	margin-bottom: 20px;
 }
-
 .btn:link, .btn:visited {
 	color: rgba(0, 0, 0, .85);
 	text-decoration: none;
 	font-weight: 500;
 }
-
 .btn:hover {
-	text-decoration: underline;
-}
-
-nav>.btn:hover {
 	text-decoration: none;
 }
-
 section {
 	min-height: 484px;
 }
-
 .container {
 	width: 100%;
 	max-width: 980px;
 	margin: 0 auto;
 	overflow: hidden;
+	padding:5%;
 	line-height: 250%;
 }
-
 .container a.btn:link, .container a.btn:visited, .container a.btn:active, input[type='submit'] {
 	padding: 0 5px;
 	white-space: nowrap;
 	height: 40px;
+	border-width:0;
 	-webkit-box-shadow:  0px 1px 4px rgba(00, 0, 0, 1);
 	box-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
 	line-height: 40px;
@@ -90,156 +69,90 @@ section {
 	-webkit-transition: all .15s ease;
 	transition: all .15s ease;
 }
-.container a[href='#projectroadmapSection'],
-	input[type='submit'] {
+input[type='submit'] {
 	color: #fff;
 	background: #3e72cf;
 }
-
 .container a[href='#contactUsSection']{
-	background: transparent;
-	color:#000;
-	border: 1px #000 solid;
+	background: #3e72cf;
+	color:#fff;
 }
-
 .container a.btn:hover  {
 	-webkit-transform: translateY(-1px);
 	transform: translateY(-1px);
 	-webkit-box-shadow: 0 7px 14px rgba(50, 50, 93, 1);
 	box-shadow: 0 7px 14px rgba(50, 50, 93, 1);
 }
-
 .makeBlock{
 	display: block;
 	text-align: center;
 	margin-right: 5px;
 }
-
-
 input[type='submit'] {
 	width: 100px;
 	height: 40px;
 	font-family: 'Lato', 'Arial', sans-serif;
 	font-size: 90%;
 }
-
 .postMessegeStatus {
 	display: block;
 }
-
 .aboutusSection {
 	background-color: #fff;
 	color: #000;
 }
-
 .contactUsSection {
 	background: #fff; /* Old browsers */
 }
-
 .pwsFooter {
 	background: #45484d; /* Old browsers */
 }
-
 .footer-sec {
 	display: inline-block;
 	min-height: 20px;
 	color: #fff;
 }
-
-.projectroadmapSection>.container>h2 {
-	color: #000;
-}
-
-.projectroadmapSection>.container {
-	padding: 2% 0;
-}
-
-.flowchartbox {
-	line-height: 350%;
-	border: 1px solid #fff;
-	border-radius: 5px;
-	text-align: center;
-	font-weight: 500;
-	color: #fff;
-	height: 50%;
-}
-
-
 .container {
 	text-align: left;
 	padding-left: 5px;
 	position: relative;
 }
-
 .container>a:FIRST-CHILD {
 	margin-bottom: 12px;
 }
-
-.projectroadmapSection .container {
-	top: 0;
-	padding: 0 5px;
-	height: 100%;
-}
-
 .contactUsSection .container {
 	top: 0;
 	padding: 0 5px;
 	height: 100%;
 }
-
-h2 a[href='#projectroadmapSection']:link, h2 a[href='#projectroadmapSection']:visited
-	{
-	text-decoration: none;
-	color: rgba(0,0,0,.5);
-	font-size: 120%;
-	background-color: transparent;
-}
-
-h2 a[href='#projectroadmapSection']:link:hover, h2 a[href='#projectroadmapSection']:visited:hover
-	{
-	color: #000;
-	font-size: 120%;
-}
-
 h2 a[href='#contactUsSection']:link, h2 a[href='#contactUsSection']:visited
 	{
 	text-decoration: none;
 	color: gray;
 	font-size: 120%;
 }
-
 h2 a[href='#contactUsSection']:link:hover, h2 a[href='#contactUsSection']:visited:hover
 	{
 	text-decoration: underline;
 	color: #000;
 	font-size: 120%;
 }
-
-.flowSection {
-	height: 19%;
-	overflow: hidden;
-}
-
 .pseudoContent:after {
 	content: '';
 	display: block;
 	padding-top: 8px;
 }
-
 .fontclass {
-	font-size: 80%;
+	font-size: 70%;
 	text-align: center;
 	font-weight: 500;
 }
-
 label {
 	display: block;
 	line-height: 100%;
-	font-size: 80%;
 	max-width: 550px;
 }
-
-input[type='text'], textarea {
+input[type='text'], textarea, select {
 	font-family: 'Lato', 'Arial', sans-serif;
 	max-width: 550px;
 	border-radius: 0;
@@ -258,11 +171,16 @@ input[type='text'], textarea {
 	height: 40px;
 	width: 100%;
 }
-
+select {
+	-webkit-appearance: menulist;
+	-moz-appearance: menulist;
+	-o-appearance: menulist;
+	appearance: menulist;
+	max-width:200px;
+}
 .line-h {
 	line-height: 150%;
 }
-
 #scroll-to-top {
 	font-size: 1rem;
 	color: #333;
@@ -278,23 +196,34 @@ input[type='text'], textarea {
 	font-size: 80%;
 	text-decoration: none;
 }
-
 .contact-form {
 	height: 100%;
 }
 
-fieldset {
+#logo-main {
+	padding-left:15px;
+}
+fieldset { 
 	border-width: 0px;
+	margin-bottom: 10px;
+	}
+form fieldset:last-child {
+	margin-bottom: 2px;
+}
+.postMessegeStatus {
+	line-height:100%;
+}
+@media screen and (min-width: 561px) {
+	#logo-main {
+	     width:400px;
+	     height:250px;
+	}
+	.fontclass {
+	font-size: 80%;
+	}
+	fieldset {
 	margin-bottom: 20px;
 }
-
-@media screen and (min-width: 561px) {
-	.pwsnav {
-		font-size: 30px;
-	}
-	.pwsnav h1 {
-		font-size: 25px;
-	}
 	.container p {
 		font-size: 17px;
 		width: 476px;
@@ -302,6 +231,7 @@ fieldset {
 	h2 {
 		font-size: 25px;
 	}
+	
 	.flowchartline {
 		height: 50%;
 	}
@@ -318,13 +248,11 @@ fieldset {
 	stroke-width: 3;
 	animation: logo 2s linear;
 }
-
 @keyframes logo {
 	from { 
 	stroke-width:1;
 	stroke-dashoffset: 1000;
 }
-
 to {
 	stroke-width: 3;
 	stroke-dashoffset: 0;

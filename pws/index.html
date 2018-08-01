@@ -3,8 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description"
-	content="Omnifood is a premium food delivery service with the mission to bring affordable and healty meals to as many people as possible.">
 
 <link rel="stylesheet" type="text/css"
 	href="resources/css/pwsmainstyle.css">
@@ -48,7 +46,7 @@
 <meta name="msapplication-config"
 	content="resources/favicons/browserconfig.xml">
 <meta name="theme-color" content="#ffffff">
-<meta name="author" content="Pritish Web Solutions">
+<meta name="author" content="Pritish Web Studio">
 <meta name="description"
 	content="We are a cloud based web application vendor and aim to provide
 		fast, scalable and highly available web applications for small and medium sized organizations, contact us if
@@ -56,112 +54,79 @@
 <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
 </head>
 <body>
-	
-	<section class="aboutusSection b-b">
+
+	<section class="aboutusSection b-b fontclass">
 
 
 		<article class='container'>
-			 <svg 
-				style='background-color: transparent;' width="400px" height="250px"
-				viewBox="0 0 400 250" id='pws-logo'>
-			<!-- <svg style='background-color:transparent;' width="160px" height="90px" viewBox="0 0 300 250" id='pws-logo'> -->
+			<svg id='logo-main' style='background-color: transparent;' viewBox="0 0 400 250" id='pws-logo'>
 <defs>
-<filter id="drop-shadow">
-<feGaussianBlur in="SourceAlpha" stdDeviation="2" />
-<feOffset dx="2" dy="2" result="offsetBlur" />
-<feMerge>
-<feMergeNode in="offsetBlur" />
-<feMergeNode in="SourceGraphic" />
-</feMerge>
-</filter>
+  <linearGradient id="solids" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="10%" style="stop-color:#f58621;stop-opacity:1" />  
+    <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+  </linearGradient>
 </defs>
-<path class="main-path" style="filter:url(#drop-shadow);stroke: #4169E1;fill:transparent"
+<path class="main-path"
+					style="stroke: url(#solids);fill:transparent" 
 					d='M25 200L325 200A110 50 0 0 0 330 140A110 50 0 0 0 305 90A110 50 0 0 0 45 90A110 50 0 0 0 25 140A110 50 0 0 0 25.7 200.7'>
 </path>
 <text x="65" y="150"
-					style="fill: #4169E1; font-size:30px;font-family:'Lato',calibri, sans-serif;">
-Pritish Web Studio 
+					style="fill: #4169E1; font-size:30px;font-family:Calibri;">
+Pritish Web Studio
 </text>
 </svg>
+
 
 			<h2>Looking for a Web Application Vendor?</h2>
 			<p>Our clients rely on us to achieve quick time development and
 				deployment of highly available, secure and high performance Web Apps
 				and APIs</p>
-			<a class='btn makeBlock' href='#projectroadmapSection'>Project
-				Implementation Road Map</a> <span class='makeBlock'>&nbsp;&nbsp;
-				Or &nbsp;&nbsp;</span> <a class='makeBlock btn' href='#contactUsSection'>Contact
+			<a class='makeBlock btn' href='#contactUsSection'>Contact
 				us</a>
 
 		</article>
 	</section>
 
-	<section class="projectroadmapSection b-c b-b"
-		id='projectroadmapSection'>
-
-		<div class='container'>
-			<h2>
-				Our Project implementation Flow&nbsp; <a
-					href='#projectroadmapSection'>#</a>
-			</h2>
-			<div id='project-outline-svg'>
-				<svg width="140" height="170">
-<title>Cat</title>
-<desc>Stick Figure of a Cat</desc>
-
-<circle cx="70" cy="95" r="50" style="stroke: black; fill: none" />
-<circle cx="85" cy="80" r="5" style="stroke: black;fill: green;" />
-<circle cx="55" cy="80" r="5" style="stroke: black;fill: green;" />
-
-<g id='cat-w'>
-<line x1='75' y1='95' x2='135' y2='85' style="stroke: black;"></line>
-<line x1="75" y1="95" x2="135" y2="105" style="stroke: black;" />
-</g>
-<use xlink:href="#cat-w" transform="translate(140 0) scale(-1,1)" />
-<polyline points="108,62, 90,10, 70,45, 50, 10, 32, 62"
-						style="stroke: black; fill: none;" />
-<polyline points="35 110, 45 120, 95 120, 105, 110"
-						style="stroke: black; fill: none;" />
-<path d="M 75 90 L 65 90 A 5 10 0 0 0 75 90"
-						style="stroke: black; fill: #ffcccc" />
-<text x="30" y="165"
-						style="font-size: 14pt;
-stroke: none; fill: black;">Preeti Cat</text>
-</svg>
-
-			</div>
-		</div>
-
-	</section>
-
-
 	<section class="contactUsSection fontclass" id="contactUsSection">
 		<div class='container'>
 			<form method="post" id="contact-form">
 				<h2>
-					Contact Us <a href="#contactUsSection">#</a>
+					Contact Us
 				</h2>
 				<fieldset>
-					<label for="contactUsFirstname">First name</label> <input
+					<label for="contactUsFirstname">Name</label> <input
 						class="ca-form-input valid" type="text" name="contactUsFirstname"
 						id="contactUsFirstname" title="First name">
 				</fieldset>
 				<fieldset>
-					<label for="contactUsLastname">Last name</label> <input
-						class="ca-form-input valid" type="text" name="contactUsLastname"
-						id="contactUsLastname" title="Last name">
+					<label for="contactUsOrganization">Organization(if any)</label> <input
+						class="ca-form-input valid" type="text" name="contactUsOrganization"
+						id="contactUsOrganization" title="Organization name">
 				</fieldset>
 				<fieldset>
-					<label for="contactUsContactNumber">Best Contact Number</label> <input
+					
+					<label for="country">Country</label> 
+					
+					<select style="" title="Country" name="country" id="country">
+                                <option aria-selected="false" selected="1" >India</option>
+                                <option aria-selected="false" value="2">United States</option>
+                                <option aria-selected="false" value="3">United Kingdom</option>
+                    </select>
+                            
+                    </fieldset>
+                    
+                    <fieldset>
+					<label for="contactUsContactNumber">Contact Number</label> 
+					<input
 						class="ca-form-input valid" type="text"
 						name="contactUsContactNumber" id="contactUsContactNumber"
-						title="Contact Number">
+						title="Contact Number" required>
 				</fieldset>
 
 				<fieldset>
 					<label for="contactUsEmail">Email Id</label> <input
 						class="ca-form-input valid" type="text" name="contactUsEmail"
-						id="contactUsEmail" title="Email Id">
+						id="contactUsEmail" title="Email Id" required pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
 				</fieldset>
 
 				<fieldset>
@@ -170,14 +135,13 @@ stroke: none; fill: black;">Preeti Cat</text>
 						placeholder="Your message" title="Message"></textarea>
 				</fieldset>
 				<fieldset>
-					<input type="submit" value="Send it!">
+					<input type="submit" class='btn' value="Send it!">
+					<span class='postMessegeStatus'></span>
 				</fieldset>
 			</form>
-			<span class='postMessegeStatus'></span>
+			
 		</div>
 	</section>
-	<a href="#pwsHeader" id="scroll-to-top">↑ <span>Scroll to
-			top</span></a>
 	<footer class='pwsFooter fontclass'>
 		<section class='footer-sec'>About Us</section>
 		<section class='footer-sec'>Tech Blog</section>
