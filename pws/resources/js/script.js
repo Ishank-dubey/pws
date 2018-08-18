@@ -39,8 +39,18 @@
 		
 		function formsubmission(event){
 			event.preventDefault();
+			$.ajax({
+				  type: "POST",
+				  url: 'http://localhost:8090/contactus',
+				  dataType:'json',
+				  contentType:'application/json',
+				  data: JSON.stringify({ foo: 'bar' }),
+				  success: function(result) {
+				    	$('.postMessegeStatus').text('Thank you! We will be in touch with you shortly');           
+				    }
+				});
 			$(event.target).find('input.btn').val('Sent!');
-			$('.postMessegeStatus').text('Thank you! We will be in touch with you shortly');
+			
 		}
 		
 		
