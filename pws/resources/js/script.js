@@ -47,7 +47,10 @@
 				  data: JSON.stringify({ foo: 'bar' }),
 				  success: function(result) {
 				    	$('.postMessegeStatus').text('Thank you! We will be in touch with you shortly');           
-				    }
+				    },
+				  error : function (error){
+					  $('.postMessegeStatus').text('Some Problem occured');
+				  }  
 				});
 			$(event.target).find('input.btn').val('Sent!');
 			
