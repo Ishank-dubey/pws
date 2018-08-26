@@ -39,12 +39,20 @@
 		
 		function formsubmission(event){
 			event.preventDefault();
+			var form = $('#contact-form'),
+			body = {name:form.find('#contactUsName').val(),
+			        organization : form.find('#contactUsOrganization').val(),
+			        country : form.find('#country').val(),
+			        contact : form.find('#contactUsContactNumber').val(),
+			        email : form.find('#contactUsEmail').val(),
+			        message : form.find('#contactUsMessage').val()};
+			
 			$.ajax({
 				  type: "POST",
 				  url: 'http://localhost:8090/contactus',
-				  dataType:'json',
-				  contentType:'application/json',
-				  data: JSON.stringify({ foo: 'bar' }),
+				  dataType:'text',
+				  contentType: 'application/json',
+				  data: JSON.stringify(body),
 				  success: function(result) {
 				    	$('.postMessegeStatus').text('Thank you! We will be in touch with you shortly');           
 				    },

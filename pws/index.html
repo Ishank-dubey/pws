@@ -94,9 +94,9 @@ Pritish Web Studio
 					Contact Us
 				</h2>
 				<fieldset>
-					<label for="contactUsFirstname">Name</label> <input
-						class="ca-form-input valid" type="text" name="contactUsFirstname"
-						id="contactUsFirstname" title="First name">
+					<label for="contactUsName">Name</label> <input
+						class="ca-form-input valid" type="text" name="contactUsName"
+						id="contactUsName" title="Name">
 				</fieldset>
 				<fieldset>
 					<label for="contactUsOrganization">Organization(if any)</label> <input
@@ -108,9 +108,9 @@ Pritish Web Studio
 					<label for="country">Country</label> 
 					
 					<select style="" title="Country" name="country" id="country">
-                                <option aria-selected="false" selected="1" >India</option>
-                                <option aria-selected="false" value="2">United States</option>
-                                <option aria-selected="false" value="3">United Kingdom</option>
+                                <option aria-selected="false" selected="India" value='India'>India</option>
+                                <option aria-selected="false" value="USA">United States</option>
+                                <option aria-selected="false" value="UK">United Kingdom</option>
                     </select>
                             
                     </fieldset>
@@ -120,7 +120,11 @@ Pritish Web Studio
 					<input
 						class="ca-form-input valid" type="text"
 						name="contactUsContactNumber" id="contactUsContactNumber"
-						title="Contact Number" required>
+						title="Contact Number" required
+						pattern="[\d]{10}"
+						oninvalid="this.setCustomValidity('Enter 10 digits')"
+    					oninput="this.setCustomValidity('')" 
+						>
 				</fieldset>
 
 				<fieldset>
