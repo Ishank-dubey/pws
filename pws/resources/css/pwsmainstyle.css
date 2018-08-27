@@ -213,6 +213,7 @@ form fieldset:last-child {
 .postMessegeStatus {
 	line-height:100%;
 }
+
 @media screen and (min-width: 561px) {
 	#logo-main {
 	     width:400px;
