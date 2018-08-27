@@ -31,8 +31,8 @@ contactUsRouter.post('/',function(req,res){
 		"Says :" + req.body.message,
 		
 		mailOptions = {
-				  from: 'ishakdubey@gmail.com',
-				  to: 'pankisharma2007@gmail.com',
+				  from: 'is@gmail.com',
+				  to: 'pa@gmail.com',
 				  subject: 'New Contact req for PWS',
 				  text: text
 				};
