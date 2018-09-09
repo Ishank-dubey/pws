@@ -96,6 +96,7 @@ input[type='submit'] {
 }
 .postMessegeStatus {
 	display: block;
+	height:35px;
 }
 .aboutusSection {
 	background-color: #fff;
@@ -105,6 +106,7 @@ input[type='submit'] {
 	background: #fff; /* Old browsers */
 }
 .pwsFooter {
+	padding-top:5px;
 	background: #45484d; /* Old browsers */
 }
 .footer-sec {
@@ -214,6 +216,23 @@ form fieldset:last-child {
 	line-height:100%;
 }
 
+.footer-sec {
+	display:block;
+	padding-bottom: 7px;
+}
+
+.footer-link {
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer-link:hover {
+	text-decoration: underline;
+}
+
+form {
+	padding-top:5px;
+}
 @media screen and (min-width: 561px) {
 	#logo-main {
 	     width:400px;

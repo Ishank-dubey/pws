@@ -54,18 +54,20 @@
 				  contentType: 'application/json',
 				  data: JSON.stringify(body),
 				  success: function(result) {
-				    	$('.postMessegeStatus').text('Thank you! We will be in touch with you shortly');           
+				    	$('.postMessegeStatus').text('Thank you! We will be in touch with you shortly');
+				    	$('#contact-form').trigger("reset");
 				    },
 				  error : function (error){
 					  $('.postMessegeStatus').text('Some Problem occured');
+					  $(event.target).find('input.btn').val('Not sent!');
 				  }  
 				});
-			$(event.target).find('input.btn').val('Sent!');
+			
 			
 		}
 		
 		
-		$("a").on('click', function (event){
+		$("a[href='#contactUsSection']").on('click', function (event){
 			event.preventDefault();
 			scrollFunction(this.hash);  
 		      

@@ -5,7 +5,7 @@ server = http.createServer(app);
 app.set('trust proxys', false),
 contactUsRouter = express.Router(),
 nodemailer = require('nodemailer'),
-transporter = nodemailer.createTransport("smtps://XXXXYYYY@gmail.com:"+encodeURIComponent('XXXXXXXXXXX') + "@smtp.gmail.com:465");
+transporter = nodemailer.createTransport("smtps://XXXX:"+encodeURIComponent('XXXX') + "@smtp.gmail.com:465");
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());	
@@ -31,7 +31,7 @@ contactUsRouter.post('/',function(req,res){
 		"Says :" + req.body.message,
 		
 		mailOptions = {
-				  from: 'ishakdubey@gmail.com',
+				  from: 'contact.pwdev@gmail.com',
 				  to: 'pankisharma2007@gmail.com',
 				  subject: 'New Contact req for PWS',
 				  text: text
@@ -44,8 +44,11 @@ contactUsRouter.post('/',function(req,res){
 				    console.log('Email sent: ' + info.response);
 				  }
 				});
+				res.send('OK');
+	} else {
+		res.send('Some parameters are missing');
 	}
-	res.send('OK');
+	
 });
 app.use('/contactus',contactUsRouter);
 server.listen(process.env.PORT || 8090, () => console.log('Example app listening on !'));
